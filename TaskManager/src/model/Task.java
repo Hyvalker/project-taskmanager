@@ -8,9 +8,9 @@ public class Task {
     private String description;
     private LocalDate deadline;
     private boolean isDone;
-    private int priority;
+    private Priority priority;
 
-    public Task (int id, String title, String description, LocalDate deadline, boolean isDone, int priority) {
+    public Task(int id, String title, String description, LocalDate deadline, boolean isDone, Priority priority) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -50,11 +50,11 @@ public class Task {
         return deadline;
     }
 
-    public int getPriority() {
+    public Priority getPriority() {
         return priority;
     }
 
-    public void setPriority(int priority) {
+    public void setPriority(Priority priority) {
         this.priority = priority;
     }
 
@@ -65,4 +65,5 @@ public class Task {
     public void setDone(boolean done) {
         isDone = done;
     }
+
 }
