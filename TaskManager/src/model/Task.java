@@ -66,4 +66,13 @@ public class Task {
         isDone = done;
     }
 
+    @Override
+    public String toString(){
+        return "ID: " + id +
+                "\nTítulo: " + title +
+                "\nDescrição: " + description +
+                "\nData limite para entrega: " + deadline +
+                "\nEstá concluída: " + (isDone ? "Sim" : "Não") +
+                "\nNível de prioridade: " + priority + "\n";
+    }
 }
