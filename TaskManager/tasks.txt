@@ -1,3 +1,4 @@
-1;Pitch;Fazer um pitch de 5 minutos para a disciplina Empreendedor 360;2025-11-10;false;HIGH
+1;Pitch;Fazer um pitch de 5 minutos para a disciplina Empreendedor 360;2025-11-10;true;HIGH
 2;Seminário Bioengenharia;Fazer um seminário de 15 a 20 minutos para a disciplina de Bioengenharia e Reparo tecidual;2025-11-13;false;HIGH
 3;Dissertação;Editar a dissertação com as alterações finais;2025-11-16;false;MEDIUM
+4;Video empreender360;Criar um vídeo de até 1 minuto para o instagram do Empreender360, que valerá como parte da nota da disciplina.;2025-11-15;false;HIGH
