@@ -3,6 +3,12 @@ package model;
 import java.time.LocalDate;
 
 public class Task {
+    /*
+    This class sets all the parameters of a Task, along with its getters, setters and constructor.
+    Also, the toString method is overridden o it displays a more readable output.
+    */
+
+    //Task parameters.
     private int id;
     private String title;
     private String description;
@@ -10,6 +16,7 @@ public class Task {
     private boolean isDone;
     private Priority priority;
 
+    //Task constructor.
     public Task(int id, String title, String description, LocalDate deadline, boolean isDone, Priority priority) {
         this.id = id;
         this.title = title;
@@ -19,9 +26,11 @@ public class Task {
         this.priority = priority;
     }
 
+    //Getters and Setters
     public void setId(int id) {
         this.id = id;
     }
+
     public int getId() {
         return id;
     }
@@ -66,8 +75,9 @@ public class Task {
         isDone = done;
     }
 
+    //Override of the toString method
     @Override
-    public String toString(){
+    public String toString() {
         return "ID: " + id +
                 "\nTítulo: " + title +
                 "\nDescrição: " + description +

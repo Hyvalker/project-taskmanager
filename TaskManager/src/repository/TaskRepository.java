@@ -9,7 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TaskRepository {
+    //This class implements methods to read or write a task on a text file named "tasks.txt"
 
+    //saves a single task on the text file.
     public static void saveTask(Task task) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("tasks.txt", true))) {
             writer.write(task.getId() + ";" +
@@ -23,6 +25,7 @@ public class TaskRepository {
         }
     }
 
+    //saves the whole list of tasks on the text file.
     public static void saveAll(List<Task> tasks) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("tasks.txt", false))) {
             for (Task task : tasks) {
@@ -39,6 +42,7 @@ public class TaskRepository {
         }
     }
 
+    //reads the text file with the last saved tasks.
     public static List<Task> readTask() {
         List<Task> tasks = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader("tasks.txt"))) {
