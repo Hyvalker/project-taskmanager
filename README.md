@@ -36,7 +36,7 @@ O **TaskManager** é um sistema simples de gerenciamento de tarefas desenvolvido
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Hyvalker/TaskManager.git
+   git clone https://github.com/Hyvalker/project-taskmanager
 Abra o projeto em sua IDE Java (ex: IntelliJ IDEA)
 
 Compile e execute o arquivo Main.java
